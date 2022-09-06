@@ -1,0 +1,4164 @@
+{
+    "key": "group_5f7c30c667629",
+    "title": "Flexible Content",
+    "fields": [
+        {
+            "key": "field_5f7c30e3b94f8",
+            "label": "Sideopbygning",
+            "name": "flex_content",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_5f85682b6fbfc": {
+                    "key": "layout_5f85682b6fbfc",
+                    "name": "banner_subpage",
+                    "label": "Banner - Underside - Breadcrumbs - Tekst",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f995ee38456c",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5f9937bc494aa",
+                            "label": "Banner midt på siden? ( citationstegn, farvefilter )",
+                            "name": "show_quote",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f995c59bafbe",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_5f995eef8456d",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5f995c59bafbe",
+                            "label": "Vis KUN brødkrummer",
+                            "name": "only_breadcrumbs",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Skjul banner og så der kun vises brødkrummer",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_5f995ed68456b",
+                            "label": "col12",
+                            "name": "col12",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_1",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5f993779494a8",
+                            "label": "Baggrundsbillede",
+                            "name": "banner_background_img",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f995c59bafbe",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5f9937a2494a9",
+                            "label": "Overskrift",
+                            "name": "banner_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f9937bc494aa",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f995c59bafbe",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5f993e566487a",
+                            "label": "Tekst",
+                            "name": "banner_text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f9937bc494aa",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f995c59bafbe",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5f99465648035",
+                            "label": "Citat",
+                            "name": "quote_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f9937bc494aa",
+                                        "operator": "==",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f995c59bafbe",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_615ff60a196df": {
+                    "key": "layout_615ff60a196df",
+                    "name": "table_of_contents",
+                    "label": "Indholdsfortegnelse",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fbe2085f3846": {
+                    "key": "layout_5fbe2085f3846",
+                    "name": "blog_video",
+                    "label": "Blog - Video element",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fbe20c77c26d",
+                            "label": "col12",
+                            "name": "col12",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_1",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5fbe20b67c26c",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5fbe22b5163ed",
+                            "label": "Placering af video",
+                            "name": "video_pos",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "left": "Venstre",
+                                "center": "Midten",
+                                "right": "Højre"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "left",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_5fbe20a4f3847",
+                            "label": "Video",
+                            "name": "video",
+                            "type": "oembed",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "width": "",
+                            "height": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fa118fb6b035": {
+                    "key": "layout_5fa118fb6b035",
+                    "name": "c1_text",
+                    "label": "1 Kolonne - Tekst",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fa122892246c",
+                            "label": "col12",
+                            "name": "col12",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_1",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5fa119096b036",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5fa12d08f37eb",
+                            "label": "Knapper",
+                            "name": "buttons",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5fa12f3ab36b7",
+                                    "label": "Valg af knap-type",
+                                    "name": "btn_choice",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "download": "Download-Knap",
+                                        "link": "Link-Knap"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "default_value": "",
+                                    "layout": "vertical",
+                                    "return_format": "value",
+                                    "save_other_choice": 0
+                                },
+                                {
+                                    "key": "field_5fb525b7374eb",
+                                    "label": "Farve - Knap",
+                                    "name": "btn_color",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "green": "Grøn",
+                                        "white": "Hvid"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "default_value": "",
+                                    "layout": "vertical",
+                                    "return_format": "value",
+                                    "save_other_choice": 0
+                                },
+                                {
+                                    "key": "field_5fa1307de9b05",
+                                    "label": "Download - Knap tekst",
+                                    "name": "download_text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5fa12f3ab36b7",
+                                                "operator": "==",
+                                                "value": "download"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5fa12fa2b36b8",
+                                    "label": "Knap - Download",
+                                    "name": "download_link",
+                                    "type": "file",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5fa12f3ab36b7",
+                                                "operator": "==",
+                                                "value": "download"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_size": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_5fa12d2ef37ec",
+                                    "label": "Knap - Link",
+                                    "name": "link",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5fa12f3ab36b7",
+                                                "operator": "==",
+                                                "value": "link"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5f8568026fbfb": {
+                    "key": "layout_5f8568026fbfb",
+                    "name": "c2_full_text_img_frontpage",
+                    "label": "2 Kolonner - Fuld bredte - Tekst + Billede - Forside",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f85693533185",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5f856a1ef6fe2",
+                            "label": "Overskrift",
+                            "name": "title",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5f97e8634aab9",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5f856a43f6fe4",
+                            "label": "Ikon + Tekst liste",
+                            "name": "icon_text_repeater",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 4,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5f856b5ed4a0e",
+                                    "label": "Listepunkt",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_5f856ab6f6fe5",
+                                    "label": "Ikon",
+                                    "name": "icomoon",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "icomoon-select-element",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "false": "",
+                                        "icon-instagram": "Instagram",
+                                        "icon-linkedin": "Linkedin",
+                                        "icon-facebook": "Facebook",
+                                        "icon-quote-up": "Quote - Venstre",
+                                        "icon-quote-down": "Quote - Højre",
+                                        "icon-arrow-down": "Pil - Ned",
+                                        "icon-arrow-right": "Pil - Højre",
+                                        "icon-check": "Flueben",
+                                        "icon-coaching": "Coaching",
+                                        "icon-digitalisering": "Digitalisering",
+                                        "icon-forretningsudvikling": "Forretningsudvikling",
+                                        "icon-mail": "Email",
+                                        "icon-telefon": "Telefon",
+                                        "icon-pin": "Lokationsnål",
+                                        "icon-sortsnak": "Sortsnak",
+                                        "icon-sparring": "Sparring",
+                                        "icon-work-life": "Work-Life",
+                                        "icon-businessbuddy": "BusinessBuddy"
+                                    },
+                                    "default_value": false,
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": true,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5f856b02f6fe6",
+                                    "label": "Tekst",
+                                    "name": "text",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "delay": 0
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5f856b52d4a0d",
+                            "label": "Knap - Link",
+                            "name": "button_link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_5f85694e33186",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5f85690d33184",
+                            "label": "Billede",
+                            "name": "img",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5f85696533187",
+                            "label": "Taleboble",
+                            "name": "speech_bubble",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 2,
+                            "new_lines": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fa105e394de6": {
+                    "key": "layout_5fa105e394de6",
+                    "name": "c2_img_text",
+                    "label": "2 Kolonner - Billede og Tekst",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fa1066c94de7",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5fa1067f94de9",
+                            "label": "Baggrundsbillede",
+                            "name": "img",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5fa1067894de8",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5fb516ed4fae1",
+                            "label": "Vis kun Tekst-editor (Ydelser)",
+                            "name": "only_text",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Ja",
+                            "ui_off_text": "Nej"
+                        },
+                        {
+                            "key": "field_5fa106ce94deb",
+                            "label": "Overskrift",
+                            "name": "title",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5fb516ed4fae1",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5fa106e094dec",
+                            "label": "Citat",
+                            "name": "quote",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5fb516ed4fae1",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5fa1069d94dea",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5fa10f8bee827",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5fa10f567bc12",
+                            "label": "col3",
+                            "name": "col3",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_4",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5fa106ee94ded",
+                            "label": "Link",
+                            "name": "download_btn",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5fb516ed4fae1",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fa00af1f9a75": {
+                    "key": "layout_5fa00af1f9a75",
+                    "name": "all_reviews",
+                    "label": "2 Kolonner - Alle Anmeldelser",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fa00b26df92e",
+                            "label": "",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Alle Anmeldelser",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5f8982e07b292": {
+                    "key": "layout_5f8982e07b292",
+                    "name": "c3_reviews",
+                    "label": "3 Kolonner - Anmeldelser",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f89830635126",
+                            "label": "Besked",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "For at rette teksten over anmeldelserne gå ind under: \r\nAnmeldelser 🡒 Anmeldese - Overskrift\r\n\r\nFor at rette de inviduelle anmeldelser gå ind under:\r\nAnmeldelser 🡒 Alle Andmeldelser",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_5f980f067ccea",
+                            "label": "Anmeldelser",
+                            "name": "reviews",
+                            "type": "relationship",
+                            "instructions": "Tilføj anmeldelser her der skal vises i sektionen. Rækkefølgen kan ændres i højre side.\r\nMinimum 4 anmeldelser.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "review"
+                            ],
+                            "taxonomy": "",
+                            "filters": [
+                                "search"
+                            ],
+                            "elements": "",
+                            "min": 4,
+                            "max": "",
+                            "return_format": "object"
+                        },
+                        {
+                            "key": "field_5fb4d573c6e8a",
+                            "label": "Vis anmeldelser i slider eller som kasser",
+                            "name": "slider_or_boxes",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Kasser",
+                            "ui_off_text": "Slider"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6309d1214dc2d": {
+                    "key": "layout_6309d1214dc2d",
+                    "name": "whitepaper",
+                    "label": "Whitepaper",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6309d1b450a13",
+                            "label": "Prispakke",
+                            "name": "pricepacks",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "prices"
+                            ],
+                            "taxonomy": "",
+                            "filters": [
+                                "post_type"
+                            ],
+                            "elements": "",
+                            "min": "",
+                            "max": "",
+                            "return_format": "object"
+                        },
+                        {
+                            "key": "field_6309d31e84137",
+                            "label": "Headline - Whitepaper",
+                            "name": "headline_whitepaper",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6309d33d84138",
+                            "label": "Image Whitepaper",
+                            "name": "image_whitepaper",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_6309d35484139",
+                            "label": "Whitepaper Form Id",
+                            "name": "whitepaper_form_id",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6309d3668413a",
+                            "label": "Buy Form Id",
+                            "name": "buy_form_id",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fb52c8e9d788": {
+                    "key": "layout_5fb52c8e9d788",
+                    "name": "c3_blog_posts",
+                    "label": "3 Kolonner - 3 Blog-indlæg - Forside",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fb78b9469d12",
+                            "label": "col12",
+                            "name": "col12",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_1",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5fb78b9469d13",
+                            "label": "Sektion titel - Link",
+                            "name": "title_link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_5fb78b9469d14",
+                            "label": "Overskrift + Tekst",
+                            "name": "title_text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5fb52ca89d789",
+                            "label": "",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Blog-indlæg",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_5fbe5a4d0812a",
+                            "label": "Udvalgte Blog-indlæg",
+                            "name": "blog_posts",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "blog"
+                            ],
+                            "taxonomy": "",
+                            "filters": [
+                                "search"
+                            ],
+                            "elements": [
+                                "featured_image"
+                            ],
+                            "min": 3,
+                            "max": 3,
+                            "return_format": "object"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5f7c30facfd0d": {
+                    "key": "layout_5f7c30facfd0d",
+                    "name": "c3_services_cta",
+                    "label": "3 Kolonner - Ydelser Call-to-action",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f85521031d02",
+                            "label": "col12",
+                            "name": "col12",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_1",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5f8551ea31d01",
+                            "label": "Sektion titel - Link",
+                            "name": "title_link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_5f854cfef46de",
+                            "label": "Overskrift + Tekst",
+                            "name": "title_text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5f85521b31d03",
+                            "label": "Indholdskasser - Call to Action",
+                            "name": "service_boxes",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5f8557e432499",
+                                    "label": "Ydelse - Call to Action",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_5f85526731d04",
+                                    "label": "Ikon",
+                                    "name": "icomoon",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "icomoon-select-element",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "false": "",
+                                        "icon-instagram": "Instagram",
+                                        "icon-linkedin": "Linkedin",
+                                        "icon-facebook": "Facebook",
+                                        "icon-quote-up": "Quote - Venstre",
+                                        "icon-quote-down": "Quote - Højre",
+                                        "icon-arrow-down": "Pil - Ned",
+                                        "icon-arrow-right": "Pil - Højre",
+                                        "icon-check": "Flueben",
+                                        "icon-coaching": "Coaching",
+                                        "icon-digitalisering": "Digitalisering",
+                                        "icon-forretningsudvikling": "Forretningsudvikling",
+                                        "icon-mail": "Email",
+                                        "icon-telefon": "Telefon",
+                                        "icon-pin": "Lokationsnål",
+                                        "icon-sortsnak": "Sortsnak",
+                                        "icon-sparring": "Sparring",
+                                        "icon-work-life": "Work-Life",
+                                        "icon-businessbuddy": "BusinessBuddy"
+                                    },
+                                    "default_value": false,
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": true,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5f85527e31d05",
+                                    "label": "Ydelse - Overskrift",
+                                    "name": "service_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5f8552bf31d06",
+                                    "label": "Tekst",
+                                    "name": "service_text",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "basic",
+                                    "media_upload": 0,
+                                    "delay": 0
+                                },
+                                {
+                                    "key": "field_5f8552db31d07",
+                                    "label": "Læs mere - Link",
+                                    "name": "service_link",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fae3677b35f6": {
+                    "key": "layout_5fae3677b35f6",
+                    "name": "all_blog_posts",
+                    "label": "3 Kolonner - Alle Blog-indlæg",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fae36c2053cc",
+                            "label": "",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Alle Blog-indlæg\r\nHver enkelt blog-indlæg kan ændres under 'Blog-indlæg' i venstre side.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fa1525046610": {
+                    "key": "layout_5fa1525046610",
+                    "name": "c4_prices",
+                    "label": "4 Kolonner - Priser",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ffda693d5771",
+                            "label": "col12",
+                            "name": "col12",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_1",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5fa15272301ac",
+                            "label": "",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Pris-pakker\r\n\r\nPriser kan ændres under Pris-pakker i venstre side.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_5fa153b12d097",
+                            "label": "Pris-pakker",
+                            "name": "prices",
+                            "type": "relationship",
+                            "instructions": "Rækkefølgen kan ændres i listen på højre side",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "prices"
+                            ],
+                            "taxonomy": "",
+                            "filters": "",
+                            "elements": "",
+                            "min": "",
+                            "max": "",
+                            "return_format": "object"
+                        },
+                        {
+                            "key": "field_5fb76eebf318b",
+                            "label": "",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "2 Kolonner - Billede og Tekst\r\nHvis der intet billeder er, så vises sektionen ikke",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_5fb76ed5f317f",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5fb76ed5f3180",
+                            "label": "Baggrundsbillede",
+                            "name": "img",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5fb76ed5f3181",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5fb76ed5f3182",
+                            "label": "Vis kun Tekst-editor (Ydelser)",
+                            "name": "only_text",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Ja",
+                            "ui_off_text": "Nej"
+                        },
+                        {
+                            "key": "field_5fb76ed5f3183",
+                            "label": "Overskrift",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5fb76ed5f3182",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5fb76ed5f3184",
+                            "label": "Citat",
+                            "name": "quote",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5fb76ed5f3182",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5fb76ed5f3185",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5fb76ed5f3186",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5fb76ed5f3187",
+                            "label": "col3",
+                            "name": "col3",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_4",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5fb76ed5f3188",
+                            "label": "Download - Knap tekst",
+                            "name": "download_btn",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5fb76ed5f3182",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5fb76ed5f3189",
+                            "label": "col3",
+                            "name": "col3",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_4",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5fb76ed5f318a",
+                            "label": "Download - Fil",
+                            "name": "download_file",
+                            "type": "file",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5fb76ed5f3182",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_size": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5f996eefec574": {
+                    "key": "layout_5f996eefec574",
+                    "name": "contact_form",
+                    "label": "Kontaktformular",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f99705f185dd",
+                            "label": "col12",
+                            "name": "col12",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_1",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5f996f16ec575",
+                            "label": "Overskrift + Tekst",
+                            "name": "title_text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5f996f57ec576",
+                            "label": "Konktaktformular",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Konktaktformular",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5f9faf356555e": {
+                    "key": "layout_5f9faf356555e",
+                    "name": "full_map_contact",
+                    "label": "Map og Kontaktoplysninger",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f9fb6d3f2e4e",
+                            "label": "col12",
+                            "name": "col12",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_1",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5f9fafaeb376b",
+                            "label": "Kontaktoplysninger",
+                            "name": "map_contact_info",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5f9fb370b376c",
+                                    "label": "Ikon",
+                                    "name": "icomoon",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "icomoon-select-element",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "false": "",
+                                        "icon-instagram": "Instagram",
+                                        "icon-linkedin": "Linkedin",
+                                        "icon-facebook": "Facebook",
+                                        "icon-quote-up": "Quote - Venstre",
+                                        "icon-quote-down": "Quote - Højre",
+                                        "icon-arrow-down": "Pil - Ned",
+                                        "icon-arrow-right": "Pil - Højre",
+                                        "icon-check": "Flueben",
+                                        "icon-coaching": "Coaching",
+                                        "icon-digitalisering": "Digitalisering",
+                                        "icon-forretningsudvikling": "Forretningsudvikling",
+                                        "icon-mail": "Email",
+                                        "icon-telefon": "Telefon",
+                                        "icon-pin": "Lokationsnål",
+                                        "icon-sortsnak": "Sortsnak",
+                                        "icon-sparring": "Sparring",
+                                        "icon-work-life": "Work-Life",
+                                        "icon-businessbuddy": "BusinessBuddy"
+                                    },
+                                    "default_value": false,
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": true,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5f9fb3afb376e",
+                                    "label": "Kontaktoplysning",
+                                    "name": "contact_info",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "basic",
+                                    "media_upload": 0,
+                                    "delay": 0
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5f9fb482b376f",
+                            "label": "Google Maps",
+                            "name": "google_maps_link",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ff42056fd44b": {
+                    "key": "layout_5ff42056fd44b",
+                    "name": "employees",
+                    "label": "Medarbejdere",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ff4206efd44c",
+                            "label": "col12",
+                            "name": "col12",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_1",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_5ff4293c4fda4",
+                            "label": "Overskrift",
+                            "name": "headline",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5ff4207efd44d",
+                            "label": "Besked",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Herunder bliver alle medarbejdere vist",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_61af14364e5a9": {
+                    "key": "layout_61af14364e5a9",
+                    "name": "faq_schema",
+                    "label": "FAQ Schema",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_61af149b2a367",
+                            "label": "col12",
+                            "name": "col12",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_1",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_61af22b6d5ab0",
+                            "label": "Skal FAQ også vises på siden?",
+                            "name": "faq_on_page",
+                            "type": "true_false",
+                            "instructions": "Hvis 'Nej' vil spørgsmålene kun blive vist i Google søgeresultater",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 1,
+                            "ui": 1,
+                            "ui_on_text": "Ja",
+                            "ui_off_text": "Nej"
+                        },
+                        {
+                            "key": "field_61af229bd5aaf",
+                            "label": "Overskrift",
+                            "name": "heading",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_61af22b6d5ab0",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_61af127715fce",
+                            "label": "FAQ - Repeater",
+                            "name": "faq_repeater",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_61af12ab15fcf",
+                                    "label": "Spørgsmål",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_61af12bb15fd0",
+                                    "label": "Spørgsmålet",
+                                    "name": "question",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "delay": 0
+                                },
+                                {
+                                    "key": "field_61af12dd15fd1",
+                                    "label": "Svaret",
+                                    "name": "answer",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "delay": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_62149772c56a5": {
+                    "key": "layout_62149772c56a5",
+                    "name": "col2_text_big_img",
+                    "label": "2 Kolonner - Tekst og stort billede",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62149a6fc56a8",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_62149a13c56a6",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_62149a83c56a9",
+                            "label": "col6 (copy)",
+                            "name": "col6_copy",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_62149a66c56a7",
+                            "label": "Billede",
+                            "name": "img",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6214a3fb27d7b": {
+                    "key": "layout_6214a3fb27d7b",
+                    "name": "cards_links",
+                    "label": "4 Kort med links",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6214a68c7af33",
+                            "label": "col12",
+                            "name": "col12",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_1",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6214a42d27d7c",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6214a48e27d7d",
+                            "label": "4 kort",
+                            "name": "cards",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 4,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6214a4c827d7e",
+                                    "label": "Overskrift",
+                                    "name": "headline",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_6214a4e727d7f",
+                                    "label": "Billede",
+                                    "name": "img",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_6214a4fa27d80",
+                                    "label": "Tekst",
+                                    "name": "card_text",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": ""
+                                },
+                                {
+                                    "key": "field_6214a50927d81",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6214aedfb5e78": {
+                    "key": "layout_6214aedfb5e78",
+                    "name": "businessbuddies",
+                    "label": "BusinessBuddies",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6214af16b5e7b",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6214aeeeb5e79",
+                            "label": "Teskt",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6214af28b5e7c",
+                            "label": "col6 (copy)",
+                            "name": "col6_copy",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6214af06b5e7a",
+                            "label": "Knap Link",
+                            "name": "link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6214c2d66030a": {
+                    "key": "layout_6214c2d66030a",
+                    "name": "col2_text_points_img",
+                    "label": "2 Kolonner - Tekst, punkter og billede",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6214cc28ca511",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6214cc05ca50f",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6214cc3fca512",
+                            "label": "col6 (copy)",
+                            "name": "col6_copy",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6214cc14ca510",
+                            "label": "Billede",
+                            "name": "img",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_6214cd51ca516",
+                            "label": "col12",
+                            "name": "col12",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_1",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6214cc46ca513",
+                            "label": "Punkter",
+                            "name": "points",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 4,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6214cc5bca514",
+                                    "label": "Billede",
+                                    "name": "point_img",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_6214cc74ca515",
+                                    "label": "Tekst",
+                                    "name": "point_text",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6214dc5ea711c": {
+                    "key": "layout_6214dc5ea711c",
+                    "name": "map_text",
+                    "label": "Kort med tekst ovenover",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6214dca7a711f",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6214dc92a711d",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6214dcb5a7120",
+                            "label": "col6 (copy)",
+                            "name": "col6_copy",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6214dc9da711e",
+                            "label": "Knap Link",
+                            "name": "link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6214e5725c23d": {
+                    "key": "layout_6214e5725c23d",
+                    "name": "blog_slider",
+                    "label": "Blog Indlæg Slider",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6214e5bf5c23f",
+                            "label": "col12",
+                            "name": "col12",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_1",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6214e5925c23e",
+                            "label": "Tekst",
+                            "name": "header_text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_621e12d20a7cb": {
+                    "key": "layout_621e12d20a7cb",
+                    "name": "subpage_header_img",
+                    "label": "Underside Header med billede",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_621e135d0a7ce",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_621e130f0a7cc",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_621e136c0a7cf",
+                            "label": "col6 (copy)",
+                            "name": "col6_copy",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_621e13450a7cd",
+                            "label": "Baggrundsbillede",
+                            "name": "bg_img",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_621e28b396aaa": {
+                    "key": "layout_621e28b396aaa",
+                    "name": "col1_textfield",
+                    "label": "1 Kolonne - Tekstfelt",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_621e28f296aab",
+                            "label": "col12",
+                            "name": "col12",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_1",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_621e28fb96aac",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_621e2d73d54ee": {
+                    "key": "layout_621e2d73d54ee",
+                    "name": "col1_textfield_btn",
+                    "label": "1 Kolonne - Tekst med overskrift og knap",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_621e2d9fd54ef",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_621e2daad54f0",
+                            "label": "Overskrift",
+                            "name": "headline",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_621e2dbbd54f1",
+                            "label": "col6 (copy)",
+                            "name": "col6_copy",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_621e2dbfd54f2",
+                            "label": "Knap Link",
+                            "name": "link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_621e2dcad54f3",
+                            "label": "col12",
+                            "name": "col12",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_1",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_621e2dd4d54f4",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_621f10afd8e8c": {
+                    "key": "layout_621f10afd8e8c",
+                    "name": "col3_prices",
+                    "label": "3 Kolonner - Prispakker",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_621f10d2d8e8d",
+                            "label": "Prispakker",
+                            "name": "pricepacks",
+                            "type": "relationship",
+                            "instructions": "Vælg 3 prispakker som skal vises",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "prices"
+                            ],
+                            "taxonomy": "",
+                            "filters": [
+                                "post_type"
+                            ],
+                            "elements": "",
+                            "min": "",
+                            "max": "",
+                            "return_format": "object"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_621f5d7296cab": {
+                    "key": "layout_621f5d7296cab",
+                    "name": "col2_text_price",
+                    "label": "2 Kolonner - Tekst og udvalgt Pris-pakke",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_621f5dad96cac",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_621f5dcb96cae",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_621f5dc596cad",
+                            "label": "col6 (copy)",
+                            "name": "col6_copy",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_621f5de296caf",
+                            "label": "Priskpakke",
+                            "name": "pricepacks",
+                            "type": "relationship",
+                            "instructions": "Vælg 1 Pris-pakke",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "prices"
+                            ],
+                            "taxonomy": "",
+                            "filters": [
+                                "post_type"
+                            ],
+                            "elements": "",
+                            "min": "",
+                            "max": "",
+                            "return_format": "object"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63033d8d0b463": {
+                    "key": "layout_63033d8d0b463",
+                    "name": "pricepack",
+                    "label": "Enkelt Prispakke",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63033d8d0b464",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_63033d8d0b465",
+                            "label": "Overskrift",
+                            "name": "header",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_63033d8d0b466",
+                            "label": "col6 (copy)",
+                            "name": "col6_copy",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_63033d8d0b467",
+                            "label": "Priskpakke",
+                            "name": "pricepacks",
+                            "type": "relationship",
+                            "instructions": "Vælg 1 Pris-pakke",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "prices"
+                            ],
+                            "taxonomy": "",
+                            "filters": [
+                                "post_type"
+                            ],
+                            "elements": "",
+                            "min": "",
+                            "max": "",
+                            "return_format": "object"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_621f6374ad334": {
+                    "key": "layout_621f6374ad334",
+                    "name": "new_all_blogs",
+                    "label": "NY Alle Blogs",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_621f6391ad335",
+                            "label": "",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Alle Blog-indlæg\r\nHver enkelt blog-indlæg kan ændres under 'Blog-indlæg' i venstre side.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_621f6ff1367f1": {
+                    "key": "layout_621f6ff1367f1",
+                    "name": "new_all_reviews",
+                    "label": "NY Alle Anmeldelser",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6229b40ca4c49",
+                            "label": "Overskrift",
+                            "name": "header_headline",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_622069cbeec97": {
+                    "key": "layout_622069cbeec97",
+                    "name": "col2_header",
+                    "label": "2 Kolonner - Underside Header",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62206a65eec9a",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_62206a1feec98",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_62206a73eec9b",
+                            "label": "col6 (copy)",
+                            "name": "col6_copy",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_62206a2feec99",
+                            "label": "Billede",
+                            "name": "img",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_62207805f1c55": {
+                    "key": "layout_62207805f1c55",
+                    "name": "col2_text_wide_small",
+                    "label": "2 Kolonner - Tekst - Bred og smal",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_622078bcf1c58",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_62207881f1c56",
+                            "label": "Tekst Bred",
+                            "name": "text_wide",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_622078c7f1c59",
+                            "label": "col6 (copy)",
+                            "name": "col6_copy",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_622078a3f1c57",
+                            "label": "Tekst Smal",
+                            "name": "text_smal",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6221fd80efee8": {
+                    "key": "layout_6221fd80efee8",
+                    "name": "banner",
+                    "label": "Banner",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6221fdc6efeec",
+                            "label": "col3",
+                            "name": "col3",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_3",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6221fd94efee9",
+                            "label": "Baggrundsbillede",
+                            "name": "img",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_6221fdd8efeed",
+                            "label": "col4 (copy)",
+                            "name": "col4_copy",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_3",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6221fdaaefeea",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6221fddbefeee",
+                            "label": "col4 (copy2)",
+                            "name": "col4_copy2",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_3",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6221fdb7efeeb",
+                            "label": "Knap Link",
+                            "name": "link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_6229dbff068cc",
+                            "label": "Knap Link",
+                            "name": "link2",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6225d33e59afc": {
+                    "key": "layout_6225d33e59afc",
+                    "name": "all_buddies",
+                    "label": "Alle BusinessBuddy'er",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6227248995117",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6227246595116",
+                            "label": "Top Tekst",
+                            "name": "top_text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6227249e95118",
+                            "label": "col6 (copy)",
+                            "name": "col6_copy",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_622724a395119",
+                            "label": "",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Her kommer et kort",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_622724b69511a",
+                            "label": "col12",
+                            "name": "col12",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_1",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6225d36359afd",
+                            "label": "Overskrift BussinessBuddy's",
+                            "name": "headline",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6225e6e8f4f63": {
+                    "key": "layout_6225e6e8f4f63",
+                    "name": "img_header",
+                    "label": "Billede Header",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6225e74ff4f66",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6225e744f4f65",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6225e763f4f67",
+                            "label": "col6 (copy)",
+                            "name": "col6_copy",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6225e737f4f64",
+                            "label": "Baggrundsbillede",
+                            "name": "img",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6225fbab38ba8": {
+                    "key": "layout_6225fbab38ba8",
+                    "name": "new_contact_form",
+                    "label": "NY Kontakt Formular",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6225fc4838bab",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6225fc1b38ba9",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6225fc5338bac",
+                            "label": "col6 (copy)",
+                            "name": "col6_copy",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6225fdc0408b7",
+                            "label": "Formular Overskrift",
+                            "name": "headline",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6225fc2a38baa",
+                            "label": "",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Her kommer en kontaktformular",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6225ffe951f3a": {
+                    "key": "layout_6225ffe951f3a",
+                    "name": "cel2_text_map",
+                    "label": "2 Kolonner - Tekst og Kort",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6226003251f3d",
+                            "label": "col6",
+                            "name": "col6",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6226000951f3b",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6226003c51f3e",
+                            "label": "col6 (copy)",
+                            "name": "col6_copy",
+                            "type": "column",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "column": "1_2",
+                            "end_column": 0
+                        },
+                        {
+                            "key": "field_6226001e51f3c",
+                            "label": "",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Her kommer et kort",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_622704f09c71d": {
+                    "key": "layout_622704f09c71d",
+                    "name": "review_slider",
+                    "label": "Review Slider",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6227050d9c71e",
+                            "label": "Overskrift",
+                            "name": "headline",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6227639557c0a": {
+                    "key": "layout_6227639557c0a",
+                    "name": "all_employees",
+                    "label": "Alle medarbejdere",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_622763a757c0b",
+                            "label": "Overskrift BusinessBuddies",
+                            "name": "headline",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_622763bd57c0c",
+                            "label": "Øvrige overskrift",
+                            "name": "headline2",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6229b62e4fc63": {
+                    "key": "layout_6229b62e4fc63",
+                    "name": "book_meeting",
+                    "label": "Book et møde",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6229b65a4fc64",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "blog"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "employee"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1661588342
+}
